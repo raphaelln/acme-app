@@ -1,0 +1,26 @@
+<div ng-controller="CityViewController">
+	<table class="table acmeTable">
+	    <tr>
+	        <td><h3>Details for {{city.name}}</h3></td>
+	        <td></td>
+	    </tr>
+	</table>
+	<table class="table citytable">
+	   
+	    <tr>
+	        <td class="col-md-2">Country Name</td>
+	        <td>{{city.state.country.name}}</td>
+	    </tr>
+	    <tr>
+	        <td>State Name</td>
+	        <td>{{city.state.name}}</td>
+	    </tr>
+	    <tr>
+	        <td>City Name</td> 
+	        <td>{{city.name}}</td>
+	    </tr> 
+	</table>
+	<div>
+	    <a class="btn btn-primary" ng-href="#/cities/{{city.id}}/edit">Edit</a>
+	</div>
+</div>

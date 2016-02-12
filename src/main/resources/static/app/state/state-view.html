@@ -1,0 +1,26 @@
+<div ng-controller="StateViewController">
+	<table class="table acmeTable">
+	    <tr>
+	        <td><h3>Details for {{state.name}}</h3></td>
+	        <td></td>
+	    </tr>
+	</table>
+	
+	<table class="table statetable">
+	    <tr>
+	        <td class="col-md-2">Country</td>
+	        <td>{{state.country.name}}</td>
+	    </tr>
+	    <tr>
+	        <td>State Name</td>
+	        <td>{{state.name}}</td>
+	    </tr>
+	    <tr>
+	        <td>State Code</td>
+	        <td>{{state.code}}</td>
+	    </tr>
+	</table>
+	<div>
+	    <a class="btn btn-primary" ng-href="#/states/{{state.id}}/edit">Edit</a>
+	</div>
+</div>

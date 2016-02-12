@@ -1,0 +1,29 @@
+<div ng-controller="CompanyViewController">
+	<table class="table acmeTable">
+	    <tr>
+	        <td><h3>Details for {{company.name}}</h3></td>
+	        <td></td>
+	    </tr>
+	</table>
+	<table class="table">
+	    <tr>
+	        <td class="col-md-2">Name</td>
+	        <td>{{company.name}}</td>
+	    </tr>
+	     <tr>
+	        <td >Address</td>
+	        <td>{{company.address}} - {{company.city.name}} - {{company.city.state.code}} - {{company.city.state.country.code}}</td>
+	    </tr>
+	     <tr>
+	        <td >Email</td>
+	        <td>{{company.email}}</td>
+	    </tr>
+	    <tr>
+	        <td >Phone</td>
+	        <td>{{company.phoneNumber}}</td>
+	    </tr>
+	</table>
+	<div>
+	    <a class="btn btn-primary" ng-href="#/companies/{{company.id}}/edit">Edit</a>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">Contries</div>
+	<div class="panel-body">
+		<table class="table table-striped table-bordered acmeTable" ng-controller="CountryListController">
+			<thead>
+			    <tr>
+			        <th class="col-md-1" >Code</th>
+			        <th>Country</th>
+			        <th class="col-md-3"></th>
+			    </tr>
+			</thead>
+		    <tr ng-repeat="country in countries">
+		        <td class="col-md-1">{{country.code}}</td>
+		        <td>{{country.name}}</td>
+		        <td class="text-right col-md-3">
+		  			<a class="btn btn-primary btn-sm" ng-href="#/countries/{{country.id}}/view" >
+		  				<i class="fa fa-eye "></i> View
+		  			</a>
+		        	<a class="btn btn-danger btn-sm" ng-click="showDeleteModal(country)" >
+		  				<i class="fa fa-trash-o"></i> Delete
+		  			</a>
+		        </td>
+		    </tr>
+		</table>
+		<a href="#/countries/new" class="btn btn-primary nodecoration">New</a>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">Countries</div>
+	<div class="panel-body">
+
+		<div ng-controller="CountryViewController">
+			<table class="table acmeTable">
+				<tr>
+					<td><h3>Details for {{country.name}}</h3></td>
+					<td></td>
+				</tr>
+			</table>
+			<table class="table acmeTable">
+				<tr>
+					<td class="col-md-2">Country Code</td>
+					<td>{{country.code}}</td>
+				</tr>
+				<tr>
+					<td>Country Name</td>
+					<td>{{country.name}}</td>
+				</tr>
+			</table>
+			<div>
+				<a class="btn btn-primary" ng-href="#/countries/{{country.id}}/edit">Edit</a>
+			</div>
+		</div>
+	</div>
+</div>

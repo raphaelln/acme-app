@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">Companies</div>
+	<div class="panel-body">
+		<table class="table table-striped table-bordered companytable" ng-controller="CompanyListController">
+			<thead>
+			    <tr>
+			    	<th>Company</th>
+			        <th>Address</th>
+			        <th></th> 
+			    </tr>  
+			</thead> 
+		    <tr ng-repeat="company in countries">
+		        <td>{{company.name}}</td>
+		        <td>{{company.address}} - {{company.city.name}} - {{company.city.state.code}} - {{company.city.state.country.code}}</td>
+		        <td class="text-right col-md-3">
+		  			<a class="btn btn-primary btn-sm" ng-href="#/companies/{{company.id}}/view" >
+		  				<i class="fa fa-eye "></i> View
+		  			</a>
+		        	<a class="btn btn-danger btn-sm" ng-click="showDeleteModal(company)" >
+		  				<i class="fa fa-trash-o"></i> Delete
+		  			</a>
+		        </td>
+		    </tr>
+		</table>
+		<a href="#/companies/new" class="btn btn-primary nodecoration">New</a>
+	</div>
+</div>

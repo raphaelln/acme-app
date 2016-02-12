@@ -1,0 +1,38 @@
+<div class="form-group">
+    <label for="country" class="col-sm-2 control-label">Country</label>
+    <div class="col-xs-5">
+    	<select class="form-control" id="country" ng-model="selectedCountry" required="required" ng-change="countryChanged(selectedCountry)">
+			<option value="">-- Select Country --</option>
+			<option data-ng-repeat="country in countries" value="{{country.id}}">{{country.name}}</option>
+		</select>
+    </div>
+</div>
+<div class="form-group" ng-show="states">
+    <label for="state" class="col-sm-2 control-label">State</label>
+    <div class="col-xs-5">
+    	<select class="form-control" id="state" ng-model="city.state.id" required="required">
+			<option value="">-- Select State --</option>
+			<option data-ng-repeat="state in states" value="{{state.id}}">{{state.name}}</option>
+		</select>
+    </div>
+</div>
+<div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+         <input type="text" ng-model="city.name" class="form-control" id="name" placeholder="City Name Here" required="required"/>
+    </div>
+</div>
+
+
+<div class="form-group ">
+    <div class="col-sm-offset-2 col-sm-10">
+    	<button type="submit" class="btn btn-success" ladda="submitting" data-style="expand-right">
+			<span  ng-show="submitting">Saving...</span>
+	    	<span ng-show="!submitting">Save</span>
+		</button>
+		<a class="btn btn-primary" href="#/cities" >
+			<i class="fa fa-reply"></i> Cancel
+		</a>
+    </div>
+</div>
+
