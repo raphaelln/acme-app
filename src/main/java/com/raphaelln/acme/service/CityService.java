@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Service;
 
 import com.raphaelln.acme.model.City;
+import com.raphaelln.acme.model.Country;
 import com.raphaelln.acme.repository.CityRepository;
 
 @Service
@@ -23,5 +24,10 @@ public class CityService extends AbstractCRUDService<City, String> {
 	MongoRepository<City, String> getRepository() {
 		return cityRepository;
 	}
+
+	@Override
+    public String getModelName() {
+        return City.class.getSimpleName();
+    }
 
 }

@@ -21,6 +21,10 @@ acmeApp.controller('CompanyListController',function($scope,$location,Company,$mo
     		$scope.itemSelected=null;
     		$scope.deleteModal.hide();
     		$scope.countries=Company.query();
+    	},function(data) {
+    		$scope.itemSelected=null;
+    		$scope.deleteModal.hide();
+    		$scope.countries=Company.query();
     	});
     }
 });

@@ -21,6 +21,10 @@ acmeApp.controller('StateListController',function($scope,$location,State,$modal)
     		$scope.itemSelected=null;
     		$scope.deleteModal.hide();
     		$scope.countries=State.query();
+    	},function(data) {
+    		$scope.itemSelected=null;
+    		$scope.deleteModal.hide();
+    		$scope.countries=State.query();
     	});
     }
 });

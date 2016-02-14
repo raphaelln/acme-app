@@ -24,4 +24,9 @@ public class StateService extends AbstractCRUDService<State, String> {
 		return stateRepository;
 	}
 
+    @Override
+    public String getModelName() {
+        return State.class.getSimpleName();
+    }
+
 }

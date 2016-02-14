@@ -17,8 +17,11 @@ acmeApp.controller('CountryListController',function($scope,$location,Country,$mo
     }
 
     $scope.deleteItem=function(country){
-    	console.log(country);
-    	country.$delete(function(){
+    	country.$delete(function(data) {
+    		$scope.itemSelected=null;
+    		$scope.deleteModal.hide();
+    		$scope.countries=Country.query();
+    	},function(data) {
     		$scope.itemSelected=null;
     		$scope.deleteModal.hide();
     		$scope.countries=Country.query();
