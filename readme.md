@@ -32,22 +32,22 @@ Full list of rest operations:
 ## Technology Stack
 
 Back-end
-: spring-mvc
-: spring-boot
-: spring-mongodb
-: java 8
-: mongodb
-: maven based project
-: webjars
+- spring-mvc
+- spring-boot
+- spring-mongodb
+- java 8
+- mongodb
+- maven based project
+- webjars
 
 Front-End
-:   angularjs 1.5
-:   twitter bootstrap 3.3.6
-:   font-awesome
-:   angular-strap
-:   angular-ladda
-:   angular-auto-validate
-:  angular-ui-bootstrap
+-   angularjs 1.5
+-   twitter bootstrap 3.3.6
+-   font-awesome
+-   angular-strap
+-   angular-ladda
+-   angular-auto-validate
+-  angular-ui-bootstrap
 
 
 ## Installation
@@ -72,12 +72,6 @@ There is a lot of improvements we could add in this application, following a lis
 - Security
 - Internationalization
 - Internationalization
-
-TODO: 
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
 
 ## License
 
