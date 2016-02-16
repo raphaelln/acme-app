@@ -66,7 +66,7 @@ Front-End
 
 ## Demo
 
-Demo is avaliable at acme-app.heroku.com
+Demo is avaliable at http://acme-app.heroku.com
 
 ## Where to go from where
 
