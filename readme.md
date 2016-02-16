@@ -67,18 +67,9 @@ Front-End
 
 ## Where to go from where
 
-There is a lot of improvements we could add in this application, following a list of them:
+There is a lot of improvements we could add in this application, but I'll list some of them:
 
-- Security
-- Internationalization
-- Internationalization
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
-
-
-
-
-
+- Security: Implement the oauth 2.0 authentication approach, with a specific authorization server, here a good example of that: http://www.baeldung.com/rest-api-spring-oauth2-angularjs
+- Internationalization: Implement the internationalization, here a good example https://gist.github.com/rvillars/6422287, using angular-translate.
+- High Avaliability: Use of the spring-cloud to meet the redundancy requirements, like spring cloud team says: "They will work well in any distributed environment, including the developer's own laptop, bare metal data centres, and managed platforms such as Cloud Foundry.", spring-cloud team.
 
