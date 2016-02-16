@@ -64,6 +64,9 @@ Front-End
 - hit the browser at: 
 `http://localhost:8080`
 
+## Demo
+
+Demo is avaliable at acme-app.heroku.com
 
 ## Where to go from where
 
